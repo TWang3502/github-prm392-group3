@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".PlayActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/txvTienNguoiDung"
+            android:text="10"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:minWidth="100dp"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:background="@drawable/bg_tien"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="6dp">
+
+        </TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imgAnhCauDo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:scaleType="centerCrop"
+            android:src="@drawable/a">
+
+        </ImageView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:minHeight="100dp">
+
+        <GridView
+            android:id="@+id/gdvCauTraLoi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"></GridView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <GridView
+            android:id="@+id/gdvDapAn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="60dp"></GridView>
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="3dp"
+            android:gravity="center">
+            <Button
+                android:onClick="moGoiY"
+                android:text="Goi y"
+                android:gravity="center"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:background="@drawable/bg_tien"
+                android:layout_weight="1"
+                android:layout_width="1dp"
+                android:layout_marginRight="3dp"
+                android:layout_height="match_parent">
+
+            </Button>
+            <Button
+                android:onClick="doiCauHoi"
+                android:text="Doi cau hoi"
+                android:gravity="center"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:background="@drawable/bg_tien"
+                android:layout_weight="1"
+                android:layout_width="1dp"
+                android:layout_height="match_parent">
+
+            </Button>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
