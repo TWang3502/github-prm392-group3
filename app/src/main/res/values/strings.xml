@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">DuoiHinhBatChu</string>
+    <string name="app_name">Project_Game_PRM392_V1</string>
+    <string name="version">- Tro choi: Duoi hinh bat chu.\n\n- Nguoi tao: Nguyen Dinh Thanh Quang.\n\n
+        - Email: quanggk98@gmail.com.\n\n- So dien thoai: 0949113896.\n\n- Phien ban: 3.5.2.
+    </string>
+    <string name="help">- Nguoi choi se dua vao hinh anh tren man hinh va suy doan ra tu khoa.\n\n - Khi giai duoc mot cau
+    do se nhan duoc 10$.\n\n - Nguoi choi co the su dung goi y, se mat 5$.\n\n - Nguoi choi co the doi cau hoi, se mat 10$.</string>
 </resources>

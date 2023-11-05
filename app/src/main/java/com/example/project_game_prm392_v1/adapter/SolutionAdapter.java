@@ -1,4 +1,4 @@
-package com.example.duoihinhbatchu.adapter;
+package com.example.project_game_prm392_v1.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -10,29 +10,29 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.example.duoihinhbatchu.R;
+import com.example.project_game_prm392_v1.R;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class DapAnAdapter extends ArrayAdapter<String> {
+public class SolutionAdapter extends ArrayAdapter<String> {
+
     private Context myCt;
     private ArrayList<String> arr;
-    public DapAnAdapter(@NonNull Context context, int resource, @NonNull List<String> objects) {
+    public SolutionAdapter(@NonNull Context context, int resource, @NonNull List<String> objects) {
         super(context, resource, objects);
         this.myCt = context;
         this.arr = new ArrayList<>(objects);
     }
 
-    @NonNull
-    @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         if(convertView == null){
             LayoutInflater inflater = (LayoutInflater)myCt.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            convertView = inflater.inflate(R.layout.item_cau_tra_loi, null);
+            convertView = inflater.inflate(R.layout.item_answer, null);
         }
-        TextView txtCauTraLoi = convertView.findViewById(R.id.txtCauTraLoi);
-        txtCauTraLoi.setText(this.arr.get(position));
+        TextView txtAnswer = convertView.findViewById(R.id.txtAnswer);
+        txtAnswer.setText(this.arr.get(position));
         return convertView;
     }
+
 }

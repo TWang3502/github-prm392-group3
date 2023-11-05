@@ -13,6 +13,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "DuoiHinhBatChu"
-include(":app")
- 
+rootProject.name = "Project_Game_PRM392_V1"
+include ':app'

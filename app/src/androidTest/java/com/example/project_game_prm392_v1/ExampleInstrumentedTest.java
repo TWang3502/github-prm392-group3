@@ -1,4 +1,4 @@
-package com.example.duoihinhbatchu;
+package com.example.project_game_prm392_v1;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("com.example.duoihinhbatchu", appContext.getPackageName());
+        assertEquals("com.example.project_game_prm392_v1", appContext.getPackageName());
     }
 }

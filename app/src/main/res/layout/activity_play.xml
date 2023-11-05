@@ -4,46 +4,63 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@drawable/background"
+    android:orientation="vertical"
     tools:context=".PlayActivity">
 
+
     <RelativeLayout
+        android:layout_marginTop="30dp"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:gravity="center">
+
         <TextView
-            android:id="@+id/txvTienNguoiDung"
-            android:text="10"
-            android:gravity="center"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:minWidth="100dp"
-            android:textColor="#000"
-            android:textSize="20sp"
-            android:background="@drawable/bg_tien"
+            android:id="@+id/tv_playerCoin"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_margin="6dp">
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginBottom="6dp"
+            android:background="@drawable/bg_coin"
+            android:gravity="center"
+            android:minWidth="100dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="10"
+            android:textColor="#000"
+            android:textSize="20sp">
 
         </TextView>
     </RelativeLayout>
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="300dp"
-        android:padding="10dp">
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_namequiz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Man 1"
+            android:gravity="center"
+            android:fontFamily="casual"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/white"
+            android:textSize="20dp"/>
 
         <ImageView
-            android:id="@+id/imgAnhCauDo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="#000000"
-            android:scaleType="centerCrop"
+            android:id="@+id/img_quiz"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
             android:src="@drawable/a">
 
         </ImageView>
-    </RelativeLayout>
+    </LinearLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -51,11 +68,12 @@
         android:minHeight="100dp">
 
         <GridView
-            android:id="@+id/gdvCauTraLoi"
+            android:id="@+id/gdvAnswer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"></GridView>
     </RelativeLayout>
+
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -63,40 +81,46 @@
         android:gravity="center">
 
         <GridView
-            android:id="@+id/gdvDapAn"
+            android:id="@+id/gdvSolution"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:layout_marginBottom="60dp"></GridView>
+            android:layout_marginBottom="60dp"
+            android:gravity="center"></GridView>
+
         <LinearLayout
-            android:layout_alignParentBottom="true"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
             android:padding="3dp"
-            android:gravity="center">
+            android:layout_marginBottom="50dp">
+
             <Button
-                android:onClick="moGoiY"
-                android:text="Goi y"
-                android:gravity="center"
-                android:textColor="#000"
-                android:textSize="20sp"
-                android:background="@drawable/bg_tien"
-                android:layout_weight="1"
                 android:layout_width="1dp"
+                android:layout_height="match_parent"
                 android:layout_marginRight="3dp"
-                android:layout_height="match_parent">
+                android:layout_weight="1"
+                android:backgroundTint="#F46335"
+                android:fontFamily="casual"
+                android:gravity="center"
+                android:onClick="openSuggestion"
+                android:text="Goi y"
+                android:textColor="@color/white"
+                android:textSize="18sp">
 
             </Button>
+
             <Button
-                android:onClick="doiCauHoi"
-                android:text="Doi cau hoi"
-                android:gravity="center"
-                android:textColor="#000"
-                android:textSize="20sp"
-                android:background="@drawable/bg_tien"
-                android:layout_weight="1"
                 android:layout_width="1dp"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#F46335"
+                android:fontFamily="casual"
+                android:gravity="center"
+                android:onClick="changeQuestion"
+                android:text="Doi cau hoi"
+                android:textColor="@color/white"
+                android:textSize="18sp">
 
             </Button>
         </LinearLayout>
