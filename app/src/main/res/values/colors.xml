@@ -2,4 +2,20 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="yellow">#FFEB3B</color>
+    <array name="mauNenCuaSo">
+        <item>#E9DFD6</item>
+        <item>#ECE0D8</item>
+        <item>#F2AF78</item>
+        <item>#EE8F55</item>
+        <item>#F67C5F</item>
+        <item>#F65E3B</item>
+        <item>#fdde7b</item>
+        <item>#e7ca70</item>
+        <item>#E9C12B</item>
+        <item>#E3BA14</item>
+        <item>#EDC501</item>
+        <item>#60D992</item>
+
+    </array>
 </resources>

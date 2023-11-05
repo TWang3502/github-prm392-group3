@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<com.example.prj2048.ovuong
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:id="@+id/txvOVuong"
+    android:background="@drawable/bo_nen_nau"
+    android:layout_margin="3dp"
+    >
+
+</com.example.prj2048.ovuong>
+</LinearLayout>

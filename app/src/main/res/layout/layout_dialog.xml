@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog"
+    android:orientation="vertical"
+    android:layout_margin="16dp">
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:background="@drawable/dialog_tren"
+        android:text="Hướng Dẫn Chơi"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:orientation="vertical">
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:gravity="left"
+            android:text="* Bạn có bốn cách để di chuyển các ô: trái, phải, lên và xuống \n* Bạn kết hợp các số như 2 và 2 để tạo thành ô 4, 4 và 4 để tạo ô 8, v.v. \n* Một số thấp như 2 sẽ xuất hiện ở một vị trí ngẫu nhiên với mỗi bước bạn thực hiện \n* Điều này làm cho bảng đầy nhanh hơn và các hàng khó di chuyển hơn khi trò chơi tiếp tục"/>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btn_dahieu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:text="Đã Hiểu"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

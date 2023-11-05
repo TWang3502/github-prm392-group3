@@ -12,5 +12,7 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "Ma Tran O So"
-include ':app'
+
+rootProject.name = "prj2048"
+include(":app")
+ 
