@@ -1,4 +1,4 @@
-package vn.fpt.edu.vn.matranoso
+package vn.fpt.edu.vn.tictactoegame
 
 import org.junit.Test
 

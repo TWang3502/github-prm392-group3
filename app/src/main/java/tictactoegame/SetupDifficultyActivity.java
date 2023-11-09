@@ -1,8 +1,10 @@
-package com.example.tictactoegame;
+package tictactoegame;
+
+import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.os.Bundle;
+import com.example.tictactoegame.R;
 
 public class SetupDifficultyActivity extends AppCompatActivity {
 

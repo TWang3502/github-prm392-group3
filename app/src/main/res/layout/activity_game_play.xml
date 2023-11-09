@@ -34,7 +34,7 @@
         custom:xColor="@color/red"
         custom:oColor="@color/yellow"
         custom:winningLineColor="#76FF03"
-        />
+        tools:ignore="MissingClass" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraint_gameplay"

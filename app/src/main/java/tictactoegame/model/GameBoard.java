@@ -1,4 +1,4 @@
-package com.example.tictactoegame.model;
+package tictactoegame.model;
 
 import android.annotation.SuppressLint;
 import android.content.Context;

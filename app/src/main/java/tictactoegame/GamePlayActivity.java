@@ -1,12 +1,11 @@
-package com.example.tictactoegame;
-
-import androidx.appcompat.app.AppCompatActivity;
+package tictactoegame;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import com.example.tictactoegame.MainActivity;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.tictactoegame.databinding.ActivityGamePlayBinding;
 
 public class GamePlayActivity extends AppCompatActivity {
